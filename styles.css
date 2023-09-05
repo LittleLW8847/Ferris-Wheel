@@ -50,7 +50,7 @@
     position: absolute;
     border: 2px solid;
     transform-origin: 50% 0%;
-    animation: cabins 10s linear infinite;
+    animation: cabins 10s ease-in-out infinite;
 }
 
 .cabin:first-of-type{
@@ -96,6 +96,19 @@
     0%{
         transform: rotate(0deg);
     }
+
+    25%{
+        background-color: yellow;
+    }
+
+    50%{
+        background-color: purple;
+    }
+
+    75%{
+        background-color: yellow;
+    }
+
     100%{
         transform: rotate(-360deg);
     }
